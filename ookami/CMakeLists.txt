@@ -1,6 +1,8 @@
 set(TARGET_NAME ookami)
 set(TARGET_HEADER_SUBDIR "ookami")
 
+set(ENABLE_WARNINGS_SETTINGS OFF)
+
 add_library(${TARGET_NAME} SHARED
   src/dllmain.cpp
 )

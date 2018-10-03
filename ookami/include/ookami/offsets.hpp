@@ -1,0 +1,3 @@
+#pragma once
+
+#define FRAMESCRIPT__EXECUTEBUFFER 0xDEADBEEF
