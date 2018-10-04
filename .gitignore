@@ -39,3 +39,6 @@ _start-cmd.bat
 
 # Wiki
 wiki
+
+# VSCode
+.vscode

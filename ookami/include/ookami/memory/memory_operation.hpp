@@ -10,11 +10,11 @@ public:
   std::vector<byte> new_bytes{};
   byte* target{};
 
-  MemoryOperation(byte* target_arg) : target{ target_arg } {}
+  MemoryOperation(byte* target_arg) : target{target_arg} {}
   MemoryOperation(byte* target_arg, std::initializer_list<byte> bytes)
-    : target{ target_arg }
-    , new_bytes{ bytes }
-  {}
+    : target{target_arg}, new_bytes{bytes}
+  {
+  }
 
   virtual ~MemoryOperation() {}
   virtual void Apply() = 0;
