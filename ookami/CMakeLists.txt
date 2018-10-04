@@ -7,6 +7,7 @@ add_library(${TARGET_NAME} SHARED
   src/dllmain.cpp
   src/detours/detour_manager.cpp
   src/detours/framescript.cpp
+  src/functions/lua.cpp
 )
 
 target_link_libraries(${TARGET_NAME}
