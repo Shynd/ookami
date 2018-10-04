@@ -13,7 +13,7 @@ BreakBeforeBraces: Linux
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
 ColumnLimit: 80
-CommentPragmas: '^ TODO(\(.*\))?:'
+CommentPragmas: '^ TODO:'
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 2
 ContinuationIndentWidth: 2
