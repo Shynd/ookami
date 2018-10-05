@@ -1,12 +1,16 @@
 #include <Windows.h>
 #include <iostream>
-#include <map>
+#include <stdio.h>
 
 #include <ookami/detours/detour_manager.hpp>
 
 DWORD WINAPI OnDllAttach(LPVOID lpvBase)
 {
   AllocConsole() && AttachConsole(GetCurrentProcessId());
+  freopen("CONOUT$", "wb", stdout);
+  freopen("CONOUT$", "wb", stderr);
+  freopen("CONIN$", "rb", stdin);
+
 
   // Setup the detours
   DetourManager::Initialize();

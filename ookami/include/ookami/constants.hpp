@@ -1,0 +1,14 @@
+#pragma once
+
+#include <stdint.h>
+
+enum TypeMask : uint8_t {
+  TYPEMASK_OBJECT = 0,
+  TYPEMASK_ITEM = 1,
+  TYPEMASK_CONTAINER = 2,
+  TYPEMASK_UNIT = 3,
+  TYPEMASK_PLAYER = 4,
+  TYPEMASK_GAMEOBJECT = 5,
+  TYPEMASK_DYNAMICOBJECT = 6,
+  TYPEMASK_CORPSE = 7,
+};

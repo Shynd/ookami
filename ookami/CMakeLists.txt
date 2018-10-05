@@ -8,6 +8,7 @@ add_library(${TARGET_NAME} SHARED
   src/detours/detour_manager.cpp
   src/detours/framescript.cpp
   src/functions/lua.cpp
+  src/objmgr/objmgr.cpp
 )
 
 target_link_libraries(${TARGET_NAME}
