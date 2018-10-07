@@ -1,4 +1,5 @@
 #include <ookami/constants.hpp>
+#include <ookami/memory/memory.hpp>
 #include <ookami/objmgr/objmgr.hpp>
 #include <ookami/offsets.hpp>
 
@@ -21,7 +22,7 @@ int __fastcall EnumVisibleObjectCallback(uint64_t guid, int filter)
   if (!guid) return 0;
 
   auto type_ptr = pointer + 0x14;
-  uint8_t type = *(uint8_t*)(type_ptr);
+  uint8_t type = Read<uint8_t>(type_ptr);
 
   if (type & TYPEMASK_PLAYER) {
     // printf("PLAYER: 0x%p\n", pointer);
