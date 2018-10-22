@@ -82,8 +82,9 @@ void DetourManager::Initialize()
   dt_mem["SMSG_WARDEN_DATA"] =
     new Detour(SMSG_WARDEN_DATA, (int)WardenDataDetour);
 
-  dt_mem["EndScene"] = new Detour(0x005A17A0, (int)EndSceneDetour);
+  dt_mem["EndScene"] =
+    new Detour(0x0059A870, (int)EndSceneDetour); // 0x005A17A0
 
-  dt_mem["Script__SendChatMessage"] =
-    new Detour(0x0049F1E0, (int)SendChatMessageDetour);
+  // dt_mem["Script__SendChatMessage"] =
+  //   new Detour(0x0049F1E0, (int)SendChatMessageDetour);
 }

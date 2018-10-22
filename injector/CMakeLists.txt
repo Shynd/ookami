@@ -1,5 +1,7 @@
 set(TARGET_NAME "injector")
 
+set(ENABLE_WARNINGS_SETTINGS OFF)
+
 # Always list the files explicitly
 add_executable(${TARGET_NAME}
   src/main.cpp
@@ -13,9 +15,10 @@ target_sources(${TARGET_NAME} PRIVATE ${HEADERS})
 target_include_directories(${TARGET_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 target_link_libraries(${TARGET_NAME}
-  #PUBLIC # Useful for libraries
+  PUBLIC # Useful for libraries
     #libraries/targets to link when linking this library.
     #this will automatically setup the needed flags and dependencies when linking against this target.
+    spdlog
   PRIVATE
     # add deps
 )

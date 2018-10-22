@@ -42,3 +42,6 @@ wiki
 
 # VSCode
 .vscode
+
+# tools
+/tools
